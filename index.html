@@ -20,7 +20,7 @@ You may also schedule an appointment with our aesthetician to discuss non-surgic
 <br><br>
 Please complete the form below or call us at (484) 526-1260 to set up your consultation.</p>  
     
-<form name="health">
+<form id="health" name="health">
      First Name
      <br>
     <input name="firstName" required="" size="81" type="text"/> 
@@ -95,7 +95,7 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     <!--Placeholder for identify and track script -->
 <script>
 // Grab a reference to our form
-var form = $('health');
+var form = document.getElementById('health');;
 
 // Setup a handler to run when the form is submitted
 form.on('submit', function(e) {

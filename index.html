@@ -158,6 +158,7 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
         analytics.track('form submitted', user, function() {
             window.location.href = "";
         });
+          $(e.target).unbind('submit').trigger('submit');
       }
 </script>
     <!--Placeholder for identify and track script -->

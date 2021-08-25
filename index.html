@@ -94,16 +94,13 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     
 <script>
 var form = document.getElementById('healthcare');
+    var emailVal = document.getElementById("email").value;
 
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
-  plan: 'Premium',
-  revenue: 99.00
+  email: emailVal
 });
-    
-var formData = JSON.stringify($("#healthcare").serializeArray());
-    console.log(formData);
 
 </script>
 

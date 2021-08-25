@@ -87,23 +87,29 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     <br><br>
     If you could change something about your appearance what would it be?
     <br>
-    <input id="appearance" size="81" type="text"/> -->
+    <input id="appearance" size="81" type="text"/>
     <br><br><br>
-        <input name="submit" type="submit" value="submit"/>
+        <input name="submit" type="submit" value="submit"/> -->
+    <button onclick="myFunction()">Submit</button>
 </form> 
     
 <script>
-var form = document.getElementById('healthcare');    
-var x = document.getElementById("healthcare").elements[2].value;
-var v = document.getElementById("healthcare").email.value;
+function myFunction() {
+  var x = document.getElementById("healthcare").elements[2].value;
+  analytics.track("Appointment Request", {
+  email: x
+});
+}    
 
+/*
+var form = document.getElementById('healthcare');    
      
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
   email: v
 });
-    
+*/
 </script>
 
 </body> 

@@ -94,9 +94,11 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     
 <script>
 function myFunction() {
-  var x = document.getElementById("healthcare").elements[2].value;
+  /* var x = document.getElementById("healthcare").elements[2].value; */
+  var obj = $('healthcare').serializeJSON();
+  var jsonString = JSON.stringify(obj);
   analytics.track("Appointment Request", {
-  email: x
+  jsonString
 });
 }    
 </script>

@@ -95,16 +95,13 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 <script>
 
 analytics.track("hello");
+
+var email = document.getElementById("email").value;
     
-var form = document.getElementById('healthcare');
-var email = form.find('[name=email]').val();
-      if (email) {
-        analytics.alias(email);
-        analytics.identify(email, {
-          email: email
-        });
-      }
-  
+analytics.identify(null {
+                   "email": email
+                   }
+
 </script>
 
 </body> 

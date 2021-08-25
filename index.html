@@ -91,13 +91,15 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     <br><br><br>
         <input name="submit" type="submit" value="submit"/>
 </form> 
+    
 <script>
-<!--Placeholder for identify and track script -->
-jQuery(document).on('Submit', function(form, data) {
-  if (window.analytics) {
-    analytics.identify({
-      email: form.email
-    }); 
+    
+$( ".as-form" ).submit(function( event ) {
+
+ analytics.track('as masterclass signup', {
+ }); 
+});
+    
 </script>
 
 </body> 

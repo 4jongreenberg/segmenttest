@@ -98,8 +98,10 @@ analytics.track("hello");
 
 
 var form = document.getElementById('healthcare');
-analytics.trackForm(form, "Appointment Request");
-
+    var emailVal = document.getElementById("healthcare").elements["email"]
+analytics.trackForm(form, "Appointment Request" {
+                    email: emailVal
+                    });
 </script>
 
 </body> 

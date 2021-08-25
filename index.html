@@ -23,49 +23,49 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 <form id="healthcare">
      First Name
      <br>
-    <input name="firstName" required="" size="81" type="text"/> 
+    <input id="firstName" required="" size="81" type="text"/> 
     <br><br> 
      Last Name
      <br>
-    <input name="lastName" required="" size="81" type="text"/> 
+    <input id="lastName" required="" size="81" type="text"/> 
     <br><br> 
      Email
      <br>
-    <input name="email" id="email" required="" size="81" type="text"/> 
+    <input id="email" required="" size="81" type="text"/> 
     <br><br> 
      Phone
      <br>
-    <input name="phone" required="" size="81" type="text"/> 
+    <input id="phone" required="" size="81" type="text"/> 
     <br><br> 
      Address
      <br>
-    <input name="address" required="" size="81" type="text"/> 
+    <input id="address" required="" size="81" type="text"/> 
     <br><br> 
      City
     <br>
-    <input name="city" required="" size="81" type="text"/> 
+    <input id="city" required="" size="81" type="text"/> 
     <br><br>
      State
     <br>
-    <input name="state" required="" size="81" type="text"/> 
+    <input id="state" required="" size="81" type="text"/> 
     <br><br>
      Zip
     <br>
-    <input name="zip" required="" size="81" type="text"/> 
+    <input id="zip" required="" size="81" type="text"/> 
     <br><br> 
      Type of Consultation
     <br>
-    <input name="typeOfConsultation" required="" size="81" type="text"/> 
+    <input id="typeOfConsultation" required="" size="81" type="text"/> 
     <br><br> 
      Please choose a day and time that works best for you. We will do our best to accommodate your request.
     <br><br>
     Day of the Week
     <br>
-    <input name="dayOfWeek" required="" size="81" type="text"/> 
+    <input id="dayOfWeek" required="" size="81" type="text"/> 
     <br><br> 
     Time of the Day
     <br>
-    <input name="timeOfDay" required="" size="81" type="text"/> 
+    <input id="timeOfDay" required="" size="81" type="text"/> 
     <br><br>
     Which area(s) are you interested?
     <br>
@@ -87,7 +87,7 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     <br><br>
     If you could change something about your appearance what would it be?
     <br>
-    <input name="timeOfDay" required="" size="81" type="text"/> 
+    <input id="appearance" size="81" type="text"/> 
     <br><br><br>
         <input name="submit" type="submit" value="submit"/>
 </form> 
@@ -96,9 +96,10 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 
 analytics.track("hello");
 
-var emailVal = document.getElementById("email").value;
+emailVal = document.getElementById("email").value;
   
 analytics.trackForm(form, "Appointment Request");
+
 </script>
 
 </body> 

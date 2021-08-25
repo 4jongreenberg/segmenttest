@@ -101,7 +101,7 @@ function myFunction() {
   var e = document.getElementById("healthcare").elements[8].value;
   var f = document.getElementById("breastReconstruction").checked;
   var g = document.getElementById("facialProcedure").checked;
-  var fullName = a.concat(" ", b);
+  var h = a.concat(" ", b);
   analytics.track("Appointment Request", {
   firstName: a,
   lastName: b,
@@ -116,7 +116,7 @@ function myFunction() {
   lastName: b,
   email: c,
   phone: d,
-  name: fullName
+  name: h
 });  
 }
 </script>

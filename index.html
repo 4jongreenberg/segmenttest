@@ -93,10 +93,10 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 </form> 
 <script>
 <!--Placeholder for identify and track script -->
-jQuery(document).on('cfSubmit', function(event, data) {
+jQuery(document).on('Submit', function(form, data) {
   if (window.analytics) {
     analytics.identify({
-      email: data.fields.email
+      email: form.email
     }); 
 </script>
 

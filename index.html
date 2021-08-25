@@ -97,7 +97,9 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 analytics.track("hello");
     
 var form = document.getElementById('healthcare');
-analytics.trackForm(form, "form");
+analytics.trackForm(form, "form" {
+                    array.from(document.querySelectorALL('#healthcare input')}.reduce((acc,input) => ({...acc,[input.id]: input.value }), {});
+                   );
   
 </script>
 

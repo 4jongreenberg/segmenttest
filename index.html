@@ -93,13 +93,14 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
 </form> 
     
 <script>
-    
+var form = document.getElementById('healthcare');
+
 var x = document.getElementById("healthcare").elements[3].value;
      
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
-  email: "test"
+  email: x
 });
     
 </script>

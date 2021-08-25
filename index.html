@@ -102,12 +102,6 @@ analytics.trackForm(form, "Appointment Request", {
   email: emailVal
 });
     
-jQuery(document).on('cfSubmit', function(event, data) {
-  if (window.analytics) {
-    analytics.identify({
-      email: emailVal
-    });
-
 </script>
 
 </body> 

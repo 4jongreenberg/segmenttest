@@ -103,11 +103,12 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
         obj[item.name] = item.value;
  
 formData = JSON.stringify(obj);
+console.log(formData);
      
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
-  formData
+  email: "test"
 });
     
 </script>

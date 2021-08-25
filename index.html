@@ -33,9 +33,9 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
      <br>
     <input name="email" size="80" type="text"/> 
    <br><br> 
-<!--     Phone
+    Phone
      <br>
-   <input id="phone" required="" size="81" type="text"/> 
+    <input id="phone" required="" size="81" type="text"/> 
     <br><br> 
      Address
      <br>
@@ -97,10 +97,14 @@ function myFunction() {
   var a = document.getElementById("healthcare").elements[0].value;
   var b = document.getElementById("healthcare").elements[1].value;
   var c = document.getElementById("healthcare").elements[2].value;
+  var d = document.getElementById("healthcare").elements[3].value;
+  var e = document.getElementById("healthcare").elements[9].value;
   analytics.track("Appointment Request", {
   firstName: a,
   lastName: b,
-  email: c
+  email: c,
+  phone: d,
+  consultType: e
 });
 }    
 </script>

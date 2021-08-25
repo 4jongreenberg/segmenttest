@@ -97,11 +97,12 @@ var form = document.getElementById('healthcare');
 var x = document.getElementById("healthcare").elements[0].value;
 
 formData = new FormData([form]);
+    y =formData.get(emsil);
      
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
-  email: formData.get(emsil)
+  email: y
 });
     
 </script>

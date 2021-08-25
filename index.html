@@ -101,6 +101,9 @@ analytics.trackForm(form, "Appointment Request", {
   plan: 'Premium',
   revenue: 99.00
 });
+    
+var formData = JSON.stringify($("#healthcare").serializeArray());
+    console.log(formData);
 
 </script>
 

@@ -99,7 +99,7 @@ var emailVal = document.getElementById('email').value;
 analytics.track("hello");
   
 analytics.trackForm(form, "Appointment Request", {
-  email: String(emailVal)
+  email: "'"+emailVal+"'"
 });
     
 </script>

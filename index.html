@@ -95,11 +95,14 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
     
 <script>
 function myFunction() {
-  var a = document.getElementById("healthcare").elements[0].value;
-  var b = document.getElementById("healthcare").elements[1].value;
-  var c = document.getElementById("healthcare").elements[2].value;
-  var d = document.getElementById("healthcare").elements[3].value;
-  var e = document.getElementById("healthcare").elements[8].value;
+  var a = document.getElementById("firstName").value;
+  var b = document.getElementById("lastName").value;
+  var c = document.getElementById("email").value;
+  var d = document.getElementById("phone").value;
+  var e = document.getElementById("address").value;
+  var o = document.getElementById("city").value;
+  var p = document.getElementById("state").value;
+  var q = document.getElementById("zip").value;
   var f = document.getElementById("breastReconstruction").checked;
   var g = document.getElementById("facialProcedure").checked;
   var h = a.concat(" ", b);
@@ -129,7 +132,11 @@ function myFunction() {
   lastName: b,
   email: c,
   phone: d,
-  name: h
+  name: h,
+  address: e,
+  city: o,
+  state: p,
+  zip: q
 });  
 }
 </script>

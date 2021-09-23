@@ -86,6 +86,19 @@ Please complete the form below or call us at (484) 526-1260 to set up your consu
         <label for="other"> Other</label><br>   
     
     <br><br>
+    
+    <label for="age-select">Choose your age range:</label>
+
+   <select name="age" id="age-select">
+    <option value="">--Please choose an option--</option>
+    <option value="18-34">18-34</option>
+    <option value="35-50">35-50</option>
+    <option value="51-69">51-69</option>
+    <option value="70-87">70-87</option>
+   </select>
+    
+   <br><br>
+
     If you could change something about your appearance what would it be?
     <br>
     <input id="appearance" size="81" type="text"/>
@@ -113,6 +126,7 @@ function myFunction() {
   var m = document.getElementById("other").checked;
   var n = document.getElementById("appearance").value;
   var s = document.getElementById("typeOfConsultation").value;
+  var t = document.getElementById("age-select").value;
   analytics.track("Appointment Request", {
   firstName: a,
   lastName: b,
@@ -126,7 +140,8 @@ function myFunction() {
   injury: k,
   injectibles: l,
   other: m,
-  appearance: n
+  appearance: n,
+  ageRange: t
 });
   analytics.identify(null, {
   firstName: a,
@@ -137,7 +152,8 @@ function myFunction() {
   address: e,
   city: o,
   state: p,
-  zip: q
+  zip: q,
+  ageRange: t
 });  
 }
 </script>

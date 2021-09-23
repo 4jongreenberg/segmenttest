@@ -108,6 +108,7 @@ function myFunction() {
   var k = document.getElementById("injury").checked;
   var l = document.getElementById("injectibles").checked;
   var m = document.getElementById("other").checked;
+  var n = document.getElementById("appearance").value;
   analytics.track("Appointment Request", {
   firstName: a,
   lastName: b,
@@ -120,7 +121,8 @@ function myFunction() {
   bodyContouring: j,
   injury: k,
   injectibles: l,
-  other: m
+  other: m,
+  appearance: n
 });
   analytics.identify(null, {
   firstName: a,

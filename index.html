@@ -103,6 +103,11 @@ function myFunction() {
   var f = document.getElementById("breastReconstruction").checked;
   var g = document.getElementById("facialProcedure").checked;
   var h = a.concat(" ", b);
+  var i = document.getElementById("skinProcedure").checked;
+  var j = document.getElementById("bodyContouring").checked;
+  var k = document.getElementById("injury").checked;
+  var l = document.getElementById("injectibles").checked;
+  var m = document.getElementById("other").checked;
   analytics.track("Appointment Request", {
   firstName: a,
   lastName: b,
@@ -110,7 +115,12 @@ function myFunction() {
   phone: d,
   consultType: e,
   breastReconstruction: f,
-  facialProcedure: g
+  facialProcedure: g,
+  skinProcedure: i,
+  bodyContouring: j,
+  injury: k,
+  injectibles: l,
+  other: m
 });
   analytics.identify(null, {
   firstName: a,

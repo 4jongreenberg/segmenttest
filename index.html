@@ -126,6 +126,20 @@ function myFunction() {
 <!--    var n = document.getElementById("appearance").value;  -->
 <!--    var s = document.getElementById("typeOfConsultation").value;  -->
   var t = document.getElementById("age-select").value;
+ 
+  analytics.identify(null, {
+  firstName: a,
+  lastName: b,
+  email: c,
+  phone: d,
+  name: h,
+  address: e,
+  city: o,
+  state: p,
+  zip: q,
+  ageRange: t
+}); 
+
   analytics.track("Form Submitted", {
   firstName: a,
   lastName: b,
@@ -141,20 +155,8 @@ function myFunction() {
 <!--      other: m, -->
 <!--      appearance: n, -->
   ageRange: t
-});
+}); 
 }
-  analytics.identify(null, {
-  firstName: a,
-  lastName: b,
-  email: c,
-  phone: d,
-  name: h,
-  address: e,
-  city: o,
-  state: p,
-  zip: q,
-  ageRange: t
-});  
 </script>
 
 </body> 
